@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.study.model.CaseStudy" table="CASE_STUDY">
+        <id name="uniqueID" type="java.lang.Long">
+            <column name="UNIQUE_ID" />
+            <generator class="native" />
+        </id>
+        <property name="studyId" type="string">
+            <column name="STUDY_ID" length="10" not-null="true" />
+        </property>
+        
+        <property name="patientName" type="string">
+            <column name="PATIENT_NAME" length="20" not-null="true"/>
+        </property>
+        
+        <property name="patientId" type="int">
+        	<column name="PATIENT_ID" length="10" not-null="true" unique="true"/>	
+        </property>
+        
+    </class>
+</hibernate-mapping>
