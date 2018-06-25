@@ -1,2 +1,2 @@
-sh cd Spring*
+sh 'cd SpringExample'
 sh 'mvn clean install'
