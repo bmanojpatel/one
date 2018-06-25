@@ -1,4 +1,2 @@
-node {
-   echo 'Hello World'
-   mvn clean install
-}
+sh cd Spring*
+sh 'mvn clean install'
